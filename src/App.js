@@ -6,7 +6,7 @@ import Parimpar from './componentes/Parimpar'
 import Inverter, { MegaSena } from './componentes/Multi'
 
 export default class App extends React.Component {
-  render() {
+  render(){
     return (
       <View style={styles.container}>
         <Simples texto='Texto flexível!'/>
