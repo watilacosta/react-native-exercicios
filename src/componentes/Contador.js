@@ -12,7 +12,8 @@ export default class Contador extends Component {
     this.setState({numero: this.state.numero + 1})
   }
 
-  limpar = () => {
+  // sem arrow function.
+  limpar() {
     this.setState({numero: this.props.numeroInicial})
   }
 
@@ -23,7 +24,7 @@ export default class Contador extends Component {
         
         <TouchableHighlight
           onPress={this.incrementar}
-          onLongPress={this.limpar} >
+          onLongPress={() => this.limpar()} >
           <Text style={{fontSize: 15}}>Incrementar/Limpar</Text>
         </TouchableHighlight>
       </View>
