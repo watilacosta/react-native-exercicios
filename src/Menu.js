@@ -6,8 +6,12 @@ import Parimpar from './componentes/Parimpar'
 import Inverter, { MegaSena } from './componentes/Multi'
 import Contador from './componentes/Contador'
 import Plataformas from './componentes/Plataformas'
+import ValidarProps from './componentes/ValidarProps'
 
 export default createDrawerNavigator({
+  ValidarProps: {
+    screen: () => <ValidarProps ano={19} />
+  },
   Plataformas: {
     screen: () => <Plataformas />
   },
